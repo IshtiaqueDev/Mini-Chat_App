@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>All Chats</h2>
-    <form action="/chats/new" method="get">
+    <form action="/chat/new" method="get">
         <button>New Chat</button>
     </form>
     <br><br>
@@ -19,6 +19,10 @@
         <p><%=chat.msg%></p>
         <form action="/chats/<%=chat.id%>/edit" method="get">
             <button>Edit</button></form>
+            <br>
+             <form action="/chats/<%=chat.id%>" method="get">
+            <button>Show</button>
+            </form>
             <br>
              <form action="/chats/<%=chat.id%>?_method=DELETE" method="post">
             <button>Delete</button>

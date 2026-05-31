@@ -1,18 +1,18 @@
-const mongoose=require("mongoose");
-const Chat=require("./models/chat.js");
+// const mongoose=require("mongoose");
+// const Chat=require("./models/chat.js");
 
 
-main().then(()=>{
-    console.log("Connection Formed!");
-}).catch((err)=>{
-    console.log("Error !");
+// main().then(()=>{
+//     console.log("Connection Formed!");
+// }).catch((err)=>{
+//     console.log("Error !");
 
 
-})
+// })
 
-async function main() {
-    await mongoose.connect("mongodb://127.0.0.1:27017/whatsapp")
-}
+// async function main() {
+//     await mongoose.connect("mongodb://127.0.0.1:27017/fakewhatsapp")
+// }
 
 // Chat.insertMany([
 //     {
@@ -50,8 +50,8 @@ async function main() {
 // })
 
 
-Chat.findByIdAndDelete('6a14210758336a5338fbfdbe').then((res)=>{
-    console.log(res);
-}).catch((err)=>{
-    console.log(err);
-})
+// Chat.findByIdAndDelete('6a14210758336a5338fbfdbe').then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
